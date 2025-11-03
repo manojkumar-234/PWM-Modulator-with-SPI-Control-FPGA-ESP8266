@@ -3,7 +3,7 @@
 ##===========================================================
 
 # 100 MHz on-board clock input
-set_property PACKAGE_PIN W5 [get_ports {clk_100mhz}]
+set_property PACKAGE_PIN Y9 [get_ports {clk_100mhz}]
 set_property IOSTANDARD LVCMOS33 [get_ports {clk_100mhz}]
 create_clock -period 10.0 -name clk100mhz [get_ports {clk_100mhz}]
 
@@ -23,6 +23,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {spi_mosi}]
 # SPI_SS_N ? V10
 set_property PACKAGE_PIN V10 [get_ports {spi_cs_n}]
 set_property IOSTANDARD LVCMOS33 [get_ports {spi_cs_n}]
+
 # PWM LED (already existing)
 set_property PACKAGE_PIN T22 [get_ports {led_out}]
 set_property IOSTANDARD LVCMOS33 [get_ports {led_out}]
